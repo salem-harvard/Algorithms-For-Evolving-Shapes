@@ -30,3 +30,11 @@ results are generated in the same directory as the code, which can easily be cha
 The other two codes "CostCalculations.py" and "Basis_Methods.py" use different methods to compute registration between finitely separated shapes. Cost calculations uses a finite element method, whereas basis methods, uses a basis set of function (like spherical harmonics) to compute the cost and minimize the distortion of the registrations. 
 
 The cost used here involves gradients of elastic distortions, which is relatively novel. The biological motivation for this is that constant growth is easier to accomplish genetically than spacial variations.
+
+
+Sixth Commit: 
+"Curve_Morphometry.py" computes the registration between different curves (given as the curvature and torsion as function of arc length). This also uses a gradient cost in the energy which is relatively novel. 
+
+The accompanying examples of egg shape parameters appeared in a science publication on egg shapes titled: "Avian egg shape: Form, function, and evolution". 
+
+The algorithm analyses a set of shapes an returns a phylogenetic tree between them. 

@@ -20,3 +20,13 @@ Fourth Commit:
 Example mesh information have been added to the folder "Mesh_Data". This contains things like Gaussian curvature, normals, faces, principal directions and so on. These are needed in the computation of registrations. 
 
 Future versions will contain code that will calculated these quantities, given two mesh as list of vertices and edges.
+
+
+Fifth Commit: 
+Running the script "Growth_Registration.py" and calling method "load_data", then chosing the desired mesh folder will run a script that computes the gradient and Hessian as described in the document "3D Continuum Morphometry.pdf" and then return an optimal registration. Examples of results also described in the PDF.  The accompanying mathematica notebook will plot the results. 
+
+results are generated in the same directory as the code, which can easily be changes.
+
+The other two codes "CostCalculations.py" and "Basis_Methods.py" use different methods to compute registration between finitely separated shapes. Cost calculations uses a finite element method, whereas basis methods, uses a basis set of function (like spherical harmonics) to compute the cost and minimize the distortion of the registrations. 
+
+The cost used here involves gradients of elastic distortions, which is relatively novel. The biological motivation for this is that constant growth is easier to accomplish genetically than spacial variations.
